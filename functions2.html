@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#p1").append("thanks for append");
+                });
+                $("#btn2").click(function(){
+                    $("#p1").empty();
+                    $("#p2").html("bye.First p-tag is empty");
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <p id="p1">Welcome you...</p>
+        <p id="p2">am the 2nd p-tag</p>
+        <input type="button" id="btn1" value="append me">
+        <input type="button" id="btn2" value="make me empty">
+    </body>
+</html>
